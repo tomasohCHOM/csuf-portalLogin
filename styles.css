@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --font: 'Space Grotesk', sans-serif;
+    --color-white: rgb(247, 247, 247);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('csuf-campus-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    background-color: var(--color-white);
+}
+
+.login-wrapper > div {
+    font-family: var(--font);
+}
+
+.login-wrapper > button {
+    font-family: var(--font);
+    border: none;
+}

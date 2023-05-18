@@ -8,12 +8,21 @@
     <title>CSUF Student Portal</title>
 </head>
 <body>
-    <div class="login-wrapper">
+    <main class="login-wrapper">
         <div class="login-title">Login to CSUF Portal</div>
-        <div class="username">Username</div>
-        <input type="text">
-        <div class="password">Password</div>
-        <button>Login</button>
-    </div>
+        <form class="login-form">
+            <input type="text" placeholder="Username">
+            <input type="text" placeholder="Password">
+        </form>
+        <a href="#">Forgot Your Password?</a>
+        <button type="submit">Login</button>
+        <div class="login-help">Need Help Logging In?</div>
+        <a href="http://www.fullerton.edu/it/students/2fa/index.php" class="2fa-info">
+            DUO Two-Factor Authentication (2FA) is required to login.
+            Check “Remember me for 5 days” to stay authenticated.
+        </a>
+        <div>First Time Students/Applicants</div>
+        <div>Alumni</div>
+    </main>
 </body>
 </html>
