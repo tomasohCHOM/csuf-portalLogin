@@ -107,8 +107,9 @@ body {
     column-gap: 5px;
 }
 
-.unregistered > button {
-    flex: 1;
+.unregistered > a {
+    text-decoration: none;
+    text-align: center;
     font-family: var(--font);
     font-size: 1rem;
     height: 100%;
