@@ -5,6 +5,7 @@
     --color-white: rgb(247, 247, 247);
     --color-white-opaque: rgb(247, 247, 247, 0.5);
     --color-orange: rgb(246, 164, 11);
+    --color-blue: rgb(53, 109, 193);
 }
 
 html {
@@ -113,10 +114,17 @@ body {
     text-align: center;
     font-family: var(--font);
     font-size: 1rem;
+    font-weight: 600;
     height: 100%;
     background: transparent;
     color: black;
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 12px;
     cursor: pointer;
+    transition: all 0.15s;
+}
+
+.unregistered > a:hover {
+    background-color: var(--color-blue);
+    color: var(--color-white);
 }
