@@ -8,21 +8,31 @@
     <title>CSUF Student Portal</title>
 </head>
 <body>
-    <main class="login-wrapper">
-        <div class="login-title">Login to CSUF Portal</div>
-        <form class="login-form">
-            <input type="text" placeholder="Username">
-            <input type="text" placeholder="Password">
+    <main class="login-main">
+        <form class="login-wrapper">
+            <h2 class="login-title">Login to CSUF Portal</h2>
+            <div class="login-form">
+                <ion-icon name="person-outline"></ion-icon>
+                <input type="text" required>
+                <label for="">Username</label>
+            </div>
+            <div class="login-form">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="text" required>
+                <label for="">Password</label>
+            </div>
+            <a href="#" class="login-help">Need Help Logging In?</a>
+            <button type="submit">Login</button>
+            <a href="http://www.fullerton.edu/it/students/2fa/index.php" class="2fa-info">
+                DUO Two-Factor Authentication (2FA) is Required.
+            </a>
+            <div class="unregistered">
+                <button>First Time Students/Applicants</button>
+                <button>Alumni</button>
+            </div>
         </form>
-        <a href="#">Forgot Your Password?</a>
-        <button type="submit">Login</button>
-        <div class="login-help">Need Help Logging In?</div>
-        <a href="http://www.fullerton.edu/it/students/2fa/index.php" class="2fa-info">
-            DUO Two-Factor Authentication (2FA) is required to login.
-            Check “Remember me for 5 days” to stay authenticated.
-        </a>
-        <div>First Time Students/Applicants</div>
-        <div>Alumni</div>
     </main>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
